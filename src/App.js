@@ -7,6 +7,7 @@ import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import {Services, Front} from './Services.js';
 
 
 var App = React.createClass({
@@ -36,9 +37,9 @@ var Header = React.createClass({
                 </Link>
               </li> 
               <li className="dropdown"> 
-                <Link to="antiServices" className="dropdown-toggle" 
+                <Link to="Services" className="dropdown-toggle" 
                     data-toggle="dropdown" role="button"
-                     aria-haspopup="true" aria-expanded="false">AntiServices
+                     aria-haspopup="true" aria-expanded="false">Services
                   <span className="caret"></span>
                 </Link> 
               </li>
@@ -61,96 +62,7 @@ var Header = React.createClass({
   }
 })
         
-var AntiServices = React.createClass({
-	getInitialState(){
-	  return(
-	  		{images:null}
-			)
-	},
-   componentWillMount(){
-   
-   	this.setState({images: data.getImages()})
-   },
-  render: function() {
- 		var imgs = this.state.images.map((img,i)=>{
-  			return (
-  				<div className="col-md-4" id="images"><img className ="img-responsive img-thumbnail" key={i} src={img} role="presentation"/></div>
-  			)
-  		})
-    return (
-      <div>
-        <nav className="navbar navbar navbar-collapse submenu">
-          <div className="container-fluid">
-            <ul className="nav navbar-nav">
-              <li><Link to="antiServices/front">Front </Link></li>
-              <li><Link to="antiServices/back">Back </Link></li>
-              <li><Link to="antiServices/management">Management </Link></li>
-            </ul>
-          </div>
-        </nav>
-        <h1>Welcome to ADD Store!</h1>
-        <h2>Home of the Attractive Distracted Developers</h2>
 
-        <h2>Store Images:</h2>
-          {imgs}
-        <h2>Front:</h2>
-          <Front/>
-        <h2>Back:</h2>
-          <Back/>
-        <h2>Management:</h2>
-          <Management/>
-      </div>
-    )
-  }
-})
-var Front = React.createClass({
-  getInitialState(){
-    return (
-      {items: null}
-      )
-    
-  },
-  componentWillMount(){
-    {this.setState({items: data.getAbout()})}
-
-  },
-  render: function() {
-    return (
-      <div id="front">
-        <h2>Front-end Web Developers</h2> 
-      </div>
-    )
-  }
-})
-var Back = React.createClass({
-  getInitialState(){
-    return (
-      {items: null}
-      )
-    
-  },
-  render: function() { 
-    return (
-      <div id="back">
-        <h2>Back-end Web Developers</h2> 
-      </div>
-    )
-  }
-})
-var Management = React.createClass({
-  getInitialState(){
-    return (
-      {items: null}
-      )    
-  },
-  render: function() {  
-    return (
-      <div id="management">
-      <h2>Management PlayGround</h2>
-      </div>
-    )
-  }
-})
 
 var CodersCloths = React.createClass({
 	getInitialState(){
@@ -257,10 +169,9 @@ var NotFound = React.createClass({
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-          <Route path="antiServices" component={AntiServices}/>
-          <Route path="antiServices/front" component={Front} />
-          <Route path="antiServices/back" component={Back}/>
-          <Route path="antiServices/management" component={Management}/>       
+          <Route path="Services" component={Services}>  
+            <Route path="Services/front" component={Front} />
+          </Route>    
           <Route path="codersCloths" component={CodersCloths} />
           <Route path="about" component={About} />
           <Route path="contact" component={Contact} />
