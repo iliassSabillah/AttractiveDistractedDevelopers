@@ -7,6 +7,7 @@ import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import {About} from './About';
 import {Services, Front, Back, Management} from './Services.js';
 import {Product, Clothing} from './Clothing.js';
 import {ImageBox} from './ImageBox.js'
@@ -87,27 +88,7 @@ var Contact = React.createClass({
     )
   }
 })
-var About = React.createClass({
-	getInitialState(){
-		return (
-			{about: null}
-			)
-		
-	},
-	componentWillMount(){
-		{this.setState({about: data.getAbout()})}
-	},
-  render: function() {
-  	console.log(this.state.about)
-    return (
-      <div>
-        <h1>About</h1>
-        <h2>{this.state.about.store_name}</h2>
-        <p>{this.state.about.store_slogan}</p> 
-      </div>
-    )
-  }
-})
+
 
 var Footer = React.createClass({
   render(){
