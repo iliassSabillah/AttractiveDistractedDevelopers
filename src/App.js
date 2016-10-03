@@ -7,8 +7,8 @@ import data from './data';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import {Services, Front} from './Services.js';
-
+import {Services, Front, Back, Management} from './Services.js';
+import Contact from './Contact';
 
 var App = React.createClass({
 
@@ -104,27 +104,7 @@ var Product = React.createClass({
   }
 })
 
-var Contact = React.createClass({
-  getInitialState(){
-    return (
-      {contact: null}
-      )
-    
-  },
-  componentWillMount(){
-    {this.setState({contact: data.getAbout()})}
-  },
-  render: function() {
-    return (
-      <div>  
-        <h1>Contact</h1>
-          <p>{this.state.contact.store}</p> 
-          <p>{this.state.contact.store_email}</p>
-          <p>{this.state.contact.store_phone}</p>
-      </div>
-    )
-  }
-})
+
 var About = React.createClass({
 	getInitialState(){
 		return (
