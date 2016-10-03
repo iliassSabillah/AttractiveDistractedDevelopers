@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data';
-import {Router, Route,RouteHandler, IndexRoute, Link, browserHistory} from 'react-router';
+import {Link} from 'react-router';
 
 
 var Services = React.createClass({
