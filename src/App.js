@@ -9,6 +9,9 @@ import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-boots
 import { LinkContainer } from 'react-router-bootstrap';
 import {Services, Front, Back, Management} from './Services.js';
 import Contact from './Contact';
+import About from './About';
+import {Product, Clothing} from './Clothing.js';
+import ImageBox from './ImageBox.js';
 
 var App = React.createClass({
 
@@ -43,8 +46,8 @@ var Header = React.createClass({
                   <span className="caret"></span>
                 </Link> 
               </li>
-              <li key="codersCloths">
-                <Link to="codersCloths">Coders Cloths
+              <li key="Clothing">
+                <Link to="Clothing">Coders Cloths
                 </Link>
               </li>
               <li key="about">
@@ -64,6 +67,7 @@ var Header = React.createClass({
         
 
 
+<<<<<<< HEAD
 var CodersCloths = React.createClass({
 	getInitialState(){
 		return (
@@ -122,10 +126,33 @@ var About = React.createClass({
         <h1>About</h1>
         <h2>{this.state.about.store_name}</h2>
         <p>{this.state.about.store_slogan}</p> 
+=======
+var Contact = React.createClass({
+  getInitialState(){
+    return (
+      {contact: null}
+      )
+    
+  },
+  componentWillMount(){
+    {this.setState({contact: data.getAbout()})}
+  },
+  render: function() {
+    return (
+      <div>  
+        <h1>Contact</h1>
+          <p>{this.state.contact.store}</p> 
+          <p>{this.state.contact.store_email}</p>
+          <p>{this.state.contact.store_phone}</p>
+>>>>>>> ec8e88fca1573b1aac6f652876960883314ac3a8
       </div>
     )
   }
 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> ec8e88fca1573b1aac6f652876960883314ac3a8
 
 var Footer = React.createClass({
   render(){
@@ -152,7 +179,7 @@ ReactDOM.render(
           <Route path="Services" component={Services}>  
             <Route path="Services/front" component={Front} />
           </Route>    
-          <Route path="codersCloths" component={CodersCloths} />
+          <Route path="Clothing" component={Clothing} />
           <Route path="about" component={About} />
           <Route path="contact" component={Contact} />
     </Route>
