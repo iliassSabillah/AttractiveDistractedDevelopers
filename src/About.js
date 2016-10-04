@@ -27,4 +27,4 @@ Our group of freelance web designers and developers have a variety of specialtie
   }
 });
 
-export {About};
+export default About;

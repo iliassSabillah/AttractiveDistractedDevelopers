@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Router, Route,RouteHandler, IndexRoute, Link, browserHistory} from 'react-router';
 // require('./App.css');
 require('./index.css');
-import data from './data';
+import data from './data2';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -47,7 +47,7 @@ var Header = React.createClass({
                 </Link> 
               </li>
               <li key="Clothing">
-                <Link to="Clothing">Coders Cloths
+                <Link to="Clothing">Clothing
                 </Link>
               </li>
               <li key="about">
@@ -99,4 +99,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
+
 
