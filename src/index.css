@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+#clothinghanger>img{
+  padding-top: 5px;
+  padding-left: 25px;
+  
+
+}
+
+=======
 html, body {
   padding: 10px;
 }
@@ -28,6 +37,7 @@ html, body {
   height: 300px;
   width: 100%;
 }
+>>>>>>> a3e23ca9f8fafef76c454b86f1db1c8078aff0d4
 body {
   margin: 0;
   padding-bottom: 0px;
@@ -36,6 +46,10 @@ body {
   font-weight: 800;
 
 }
+/*img{
+display:inline;
+width: 20%;
+height: 50%;}*/
 @media (max-width: 979px) {
   body {
     padding-top: 0px;
@@ -56,6 +70,12 @@ body {
   padding: 2rem;
   color: #9d9d9d;
   background-color: #222;
-   /*#efefef;*/
   text-align: center;
+}
+
+.box{
+  padding: 25px;
+  width:80%;
+  height:80%;
+  background-color: green;
 }
