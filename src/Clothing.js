@@ -43,3 +43,5 @@ var Product = React.createClass({
 })
 
 export {Clothing, Product};
+
+
