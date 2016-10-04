@@ -3,12 +3,8 @@ import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 // require('./App.css');
 require('./index.css');
-<<<<<<< HEAD
-import data from './data2';
-=======
 import data from './data';
 import $ from 'jquery';
->>>>>>> a3e23ca9f8fafef76c454b86f1db1c8078aff0d4
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, Nav, Navbar, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
