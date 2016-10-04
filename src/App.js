@@ -34,11 +34,11 @@ var Home = React.createClass({
     return (
       <div id="home">
           <ul className="breadcrumb">
-            <li><a href="#home">Home</a></li>
+            <li  className="active"><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#coderclothing">Clothing</a></li>
             <li><a href="#contactInfo">Contact</a></li>
-            <li className="active">About</li>
+            <li><a href="#homeabout">About</a></li>
           </ul>
           <ImageBox />
           <HomeAbout />
@@ -195,14 +195,14 @@ ReactDOM.render(
     <Router history={browserHistory}>
       <Route path="/" component={App}>
             <IndexRoute component={Home}/>
-            <Route path="Services" component={Services}>
+            <Route path="/Services" component={Services}>
               <Route path="front" component={Front}/>
               <Route path="back" component={Back}/>
               <Route path="Management" component={Management}/>
             </Route>
-            <Route path="Clothing" component={Clothing} />
-            <Route path="about" component={About} />
-            <Route path="contact" component={Contact} />
+            <Route path="/Clothing" component={Clothing} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
       </Route>
       <Route path="*" component={NotFound} />
   </Router>,
