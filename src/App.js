@@ -108,7 +108,7 @@ var CoderClothing = React.createClass({
         <p>BUY CLOTHES TO CODE IN</p>
         <div className="container">
           <div className="row">
-             <div className='col-md-12'> <img src="http://www.betterthanpants.com/media/catalog/product/i/-/i-know-html-funny-nerd-tshirt-mens-regular-white_2_1.png" width="250" height="300" alt="front-end-dev" />
+             <div className='col-md-12'> <img class='img-circle' src="http://www.betterthanpants.com/media/catalog/product/i/-/i-know-html-funny-nerd-tshirt-mens-regular-white_2_1.png" width="250" height="300" alt="front-end-dev" />
             </div>
           </div>
         </div>
@@ -125,15 +125,15 @@ var ServicesIcon = React.createClass({
         <div className="container">
           <div className="row">
 
-           <div className='col-sm-4'> <img src="http://www.samsung.com/us/aboutsamsung/sustainability/sustainablemanagement/img/over02_icon3.png" width="150" height="100" alt="front-end-dev" />
+           <div className='col-sm-4'> <img className='img-circle' src="http://www.samsung.com/us/aboutsamsung/sustainability/sustainablemanagement/img/over02_icon3.png" width="150" height="100" alt="front-end-dev" />
                        <p>Front End development is blah blah blah </p>
           </div>
 
-            <div className='col-sm-4'><img src="https://cdn1.iconfinder.com/data/icons/express-your-creativity/60/web-development-512.png" width="150" height="100" alt="back-end-dev" />
+            <div className='col-sm-4'><img className='img-circle' src="https://cdn1.iconfinder.com/data/icons/express-your-creativity/60/web-development-512.png" width="150" height="100" alt="back-end-dev" />
                         <p>Back End Development is blah blah blah</p>
             </div>
             
-            <div className='col-sm-4'><img src="http://i1.wp.com/connectedresearchers.com/wp-content/uploads/2014/11/icon_26055.png" width="150" height="100" alt="program-management" />
+            <div className='col-sm-4'><img className='img-circle' src="http://i1.wp.com/connectedresearchers.com/wp-content/uploads/2014/11/icon_26055.png" width="150" height="100" alt="program-management" />
                         <p>Program Management to boss us around</p>
             </div>
 
@@ -180,13 +180,8 @@ var NotFound = React.createClass({
 })
 ReactDOM.render(
   <div>
-  <ImageBox />
   <Header />
-  <ImageBox2 />
-  <HomeAbout />
-  <ServicesIcon />
-  <CoderClothing />
-  <ContactInfo />
+  <Contact />
   <Footer />
   </div>,
   document.getElementById('root')
