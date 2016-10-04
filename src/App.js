@@ -11,7 +11,6 @@ import {Services, Front, Back, Management} from './Services.js';
 import Contact from './Contact';
 import About from './About';
 import {Product, Clothing} from './Clothing.js';
-import ImageBox from './ImageBox.js';
 
 var App = React.createClass({
 
@@ -19,8 +18,11 @@ var App = React.createClass({
     return (
       <div>
           <Header />
-          {this.props.children}
+          <ImageBox />
+          <HomeAbout />
+          <ServicesIcon />
           <Footer/>
+          {this.props.children}
       </div>
     )
   }
@@ -47,7 +49,7 @@ var Header = React.createClass({
                 </Link> 
               </li>
               <li key="Clothing">
-                <Link to="Clothing">Coders Cloths
+                <Link to="Clothing">Clothing
                 </Link>
               </li>
               <li key="about">
@@ -64,7 +66,98 @@ var Header = React.createClass({
     )
   }
 })
-        
+
+var ImageBox = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <img src="https://wallpaperscraft.com/image/programmer_coder_admin_administrator_5628_1920x1080.jpg" alt="hire us" className="lisapic"/>
+      </div>
+    )
+  }
+})
+
+var ImageBox2 = React.createClass({
+  render: function() {
+    return (
+    <div>
+      <img src="http://www.bstlhj6.com/data/out/156/5018796-programmer-wallpapers.png" alt="hire us" className="lisapic" />
+    </div>
+      )
+  }
+})
+
+var HomeAbout = React.createClass({
+  render: function() {
+    return (  <div>
+                <div id="#homeabout">
+                <h1>ABOUT</h1> </div>
+                  <p>Stumptown flexitarian organic, disrupt waistcoat chambray VHS. Blog meggings freegan, PBR&B crucifix +1 thundercats tote bag offal VHS cray hashtag YOLO shabby chic. 8-bit affogato portland, four dollar toast master cleanse flexitarian wayfarers forage schlitz microdosing slow-carb. Actually sartorial XOXO literally meh, biodiesel woke. Gentrify tousled tattooed af prism. Tbh iceland hot chicken vinyl, gluten-free messenger bag ugh unicorn kogi. Pork belly semiotics vaporware, tofu microdosing lumbersexual unicorn seitan aesthetic.</p>
+                
+              </div>
+
+    )
+  }
+})
+
+var CoderClothing = React.createClass({
+  render: function() {
+    return (  
+      <div>
+        <div id="#coderclothing"> <h1>CODER CLOTHING</h1> </div>
+        <p>BUY CLOTHES TO CODE IN</p>
+        <div className="container">
+          <div className="row">
+             <div className='col-md-12'> <img src="http://www.betterthanpants.com/media/catalog/product/i/-/i-know-html-funny-nerd-tshirt-mens-regular-white_2_1.png" width="250" height="300" alt="front-end-dev" />
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}) 
+
+var ServicesIcon = React.createClass({
+  render: function() {
+    return (  
+      <div>
+        <div id="#services"> <h1>SERVICES</h1> </div>
+        <div className="container">
+          <div className="row">
+
+           <div className='col-sm-4'> <img src="http://www.samsung.com/us/aboutsamsung/sustainability/sustainablemanagement/img/over02_icon3.png" width="150" height="100" alt="front-end-dev" />
+                       <p>Front End development is blah blah blah </p>
+          </div>
+
+            <div className='col-sm-4'><img src="https://cdn1.iconfinder.com/data/icons/express-your-creativity/60/web-development-512.png" width="150" height="100" alt="back-end-dev" />
+                        <p>Back End Development is blah blah blah</p>
+            </div>
+            
+            <div className='col-sm-4'><img src="http://i1.wp.com/connectedresearchers.com/wp-content/uploads/2014/11/icon_26055.png" width="150" height="100" alt="program-management" />
+                        <p>Program Management to boss us around</p>
+            </div>
+
+            </div>
+        </div>
+      </div>
+    )
+  }
+})    
+
+var ContactInfo = React.createClass({
+  render: function() {
+    return (  <div>
+                <div id="contact"><h1>CONTACTINFO</h1></div>
+                <h3>C4Q</h3>
+                <h4>ACCESS CODE</h4>
+                <p>31-00 47th ave</p>
+                <p>Phone Number</p>
+                <p>email</p>
+              </div>
+
+    )
+  }
+})   
 
 var Footer = React.createClass({
   render(){
@@ -86,17 +179,16 @@ var NotFound = React.createClass({
   }
 })
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-          <Route path="Services" component={Services}>  
-            <Route path="Services/front" component={Front} />
-          </Route>    
-          <Route path="Clothing" component={Clothing} />
-          <Route path="about" component={About} />
-          <Route path="contact" component={Contact} />
-    </Route>
-    <Route path="*" component={NotFound} />
-  </Router>,
+  <div>
+  <ImageBox />
+  <Header />
+  <ImageBox2 />
+  <HomeAbout />
+  <ServicesIcon />
+  <CoderClothing />
+  <ContactInfo />
+  <Footer />
+  </div>,
   document.getElementById('root')
 );
 
