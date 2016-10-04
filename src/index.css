@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #clothinghanger>img{
   padding-top: 5px;
   padding-left: 25px;
@@ -5,10 +6,44 @@
 
 }
 
+=======
+html, body {
+  padding: 10px;
+}
+
+.img-circle {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.lisapic {
+  width: 100%;
+}
+#homeabout {
+  background: url("http://www.bstlhj6.com/data/out/156/5018796-programmer-wallpapers.png") no-repeat center center fixed;
+  opacity: 0.7;
+  background-size: cover;
+  height: 280px;
+  width: 100%;
+}
+/*#coderclothing {
+  background:url("https://s-media-cache-ak0.pinimg.com/originals/0b/f9/5b/0bf95b9203fe45ab8d5e7266647fa3f9.jpg")no-repeat center center fixed;                ;
+}*/
+#services {
+  background: url("https://wallpaperscraft.com/image/programmer_coder_admin_administrator_5628_1920x1080.jpg") no-repeat center center fixed;
+  opacity: 0.7;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+>>>>>>> a3e23ca9f8fafef76c454b86f1db1c8078aff0d4
 body {
   margin: 0;
   padding-bottom: 0px;
   font-family: sans-serif;
+  color: black;
+  font-weight: 800;
 
 }
 /*img{
