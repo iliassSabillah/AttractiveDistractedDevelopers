@@ -105,8 +105,10 @@ var HomeAbout = React.createClass({
     return ( 
            <div id="homeabout">
             <h1>ABOUT</h1>
-              <p>Stumptown flexitarian organic, disrupt waistcoat chambray VHS. Blog meggings freegan, PBR&B crucifix +1 thundercats tote bag offal VHS cray hashtag YOLO shabby chic. 8-bit affogato portland, four dollar toast master cleanse flexitarian wayfarers forage schlitz microdosing slow-carb. Actually sartorial XOXO literally meh, biodiesel woke. Gentrify tousled tattooed af prism. Tbh iceland hot chicken vinyl, gluten-free messenger bag ugh unicorn kogi. Pork belly semiotics vaporware, tofu microdosing lumbersexual unicorn seitan aesthetic.</p>
-                
+              <p>ADD IS A CREATIVE FREELANCE AGENCY THAT SPECIALIZES IN FULL STACK WEB DEVELOPMENT.
+                Attractive Distracted Developers <br/>
+                (ADD) def: A group of highly attractive developers (both physically and skillfully) well versed in JavaScript and professional service at affordable costs.</p>
+                    
           </div>
 
     )
@@ -122,13 +124,14 @@ var ServicesIcon = React.createClass({
         <div className="container">
           <div className="row">
             <div className='col-sm-4'><Link to="Services">Front</Link>
-               <p>Front End development is blah blah blah </p>
+               <p>Beautifully implement visual elements that users see and interact with in a web application. Our web designers work with the support of the back-end developers. </p>
             </div>
             <div className='col-sm-4'><Link to="Services"><img src="https://cdn1.iconfinder.com/data/icons/express-your-creativity/60/web-development-512.png" width="150" height="100" alt="back-end-dev" /></Link>
-                <p>Back End Development is blah blah blah</p>
+                <p>Our back end developers
+                are experts in being responsible for server-side web application logic, APIs, and integration with front end web developers.</p>
             </div>
             <div className='col-sm-4'><Link to="Services"><img src="http://i1.wp.com/connectedresearchers.com/wp-content/uploads/2014/11/icon_26055.png" width="150" height="100" alt="program-management" /></Link>
-                <p>Program Management to boss us around</p>
+                <p>From concept to post production all aspects of your project will be in good hands with our professional project and product managers.</p>
             </div>
           </div>
     
@@ -143,7 +146,7 @@ var CoderClothing = React.createClass({
   render: function() {
     return (  
       <div id="coderclothing"> <h1>CODER CLOTHING</h1>
-          <p>BUY CLOTHES TO CODE IN</p>
+          <p>Clodes to code in! View our coder closet for some coder clothes to add to your coder cache.</p>
           <div className="container">
             <div className="row">
                <div className='col-md-12'> <Link to="Clothing"><img src="http://www.betterthanpants.com/media/catalog/product/i/-/i-know-html-funny-nerd-tshirt-mens-regular-white_2_1.png" width="250" height="300" alt="front-end-dev" /></Link>
@@ -161,6 +164,7 @@ var ContactInfo = React.createClass({
     return ( 
           <div id="contactInfo">
             <h1>Contact Info</h1>
+            <p>ADD located at 31-00 soured from c4q blah blah</p>
           </div>
 
     )
