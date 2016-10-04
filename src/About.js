@@ -16,11 +16,9 @@ var About = React.createClass({
   render: function() {
     return (
       <div id="storeAbout">
-        <h2>As a very small group of Freelance Web Designers and developers, we offer professional service at affordable prices. 
-
-The sales pitch is simple. We provide a superior product that you can see for yourself in our portfolio. We provide a level of service and professionalism that is uncommon in business and even more so in the faceless, online industry. 
-
-Our group of freelance web designers and developers have a variety of specialties. We lean on each other to cover a large  (bc we lack well rounded skills) number of needs for our clients. </h2> 
+        <h2>ABOUT
+ADD IS A CREATIVE FREELANCE AGENCY THAT SPECIALIZES IN FULL STACK WEB DEVELOPMENT.
+Attractive Distracted Developers (ADD) def: A group of highly attractive developers (both physically and skillfully) well versed in JavaScript and professional service at affordable costs.</h2> 
 
       </div>
     )
