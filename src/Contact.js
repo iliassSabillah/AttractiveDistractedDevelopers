@@ -40,9 +40,6 @@ var Contact = React.createClass({
                            <a href="#">Social Media</a><br></br>
                            <a href="#">GitHub</a>
                 </div>
-                
-
-
           </div>
         </div>
       </div>
