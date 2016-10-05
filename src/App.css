@@ -1,13 +1,41 @@
 html, body {
   padding: 10px;
 }
+#ImageBox{
+  padding: 20px;
+  background: url("https://hd.unsplash.com/photo-1453928582365-b6ad33cbcf64")no-repeat center center fixed;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+}
+#homeabout  {
+  padding: 20px;
+  text-align: center;
 
+
+}
+#coderclothing {
+  padding: 20px;
+  text-align: center;
+  background: url("http://xboxhut.com/wp-content/uploads/2016/06/hanging-clothes-rack-from-ceiling-wallpaper-gym.jpg") no-repeat center center fixed;
+}
+#contactInfo{
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  background: url("https://hd.unsplash.com/photo-1447069387593-a5de0862481e") no-repeat center center fixed;
+}
+#services {
+  padding: 20px;
+  text-align: center;
+
+}
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 5s linear;
   height: 80px;
 }
 

@@ -2,13 +2,16 @@ html, body {
   padding: 10px;
 }
 
+.breadcrumb {
+  background-color: #FF165D;
+}
+
 .breadcrumb li>a {
-  color: black;
+  color: #F6F7D7;
 }
 
 h1 {
-  color: white;
-  background-color: rgba(0, 143, 149, 0.5);
+  color: black;
 }
 
 .img-circle {
@@ -57,15 +60,15 @@ height: 50%;}*/
 }
 
 .navbar {
-  background-color: #E24E42;
+  background-color: #FF165D;
 }
 
 .navbar-inverse .navbar-brand {
-  color: white;
+  color: #F6F7D7;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
+    color: #F6F7D7;
 }
 
 .navbar.submenu>li{
@@ -73,7 +76,7 @@ height: 50%;}*/
 }
 
 .container {
-  background-color: rgba(233, 176, 0, 0.5);
+  background-color: ;
   border-radius: 8px;
 }
 .footer {
@@ -82,10 +85,10 @@ height: 50%;}*/
   bottom: 0;
   left: 0;
   margin-bottom: 0;
-  margin-top:100%;
+  margin-top:0%;
   padding: 2rem;
   color: white;
-  background-color: #E24E42;
+  background-color: #FF165D;
   text-align: center;
 }
 
@@ -93,5 +96,5 @@ height: 50%;}*/
   padding: 25px;
   width:80%;
   height:80%;
-  background-color: green;
+  background-color: black;
 }

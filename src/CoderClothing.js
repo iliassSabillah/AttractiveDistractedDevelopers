@@ -10,7 +10,7 @@ var CoderClothing = React.createClass({
           <p>Clodes to code in! View our coder closet for some coder clothes to add to your coder cache.</p>
           <div className="container">
             <div className="row">
-               <div className='col-md-12'> <Link to="Clothing"><img src="http://www.betterthanpants.com/media/catalog/product/i/-/i-know-html-funny-nerd-tshirt-mens-regular-white_2_1.png" width="250" height="300" alt="front-end-dev" /></Link>
+               <div className='col-md-12'> <Link to="Clothing"><img src="https://hd.unsplash.com/photo-1453486030486-0a5ffcd82cd9" width="450" height="300"></img></Link>
               </div>
             </div>
           </div>
