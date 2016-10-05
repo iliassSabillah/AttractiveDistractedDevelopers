@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 
+=======
+
+#clothinghanger>img{
+  padding-top: 5px;
+  padding-left: 25px;
+
+}
+>>>>>>> dev
 html, body {
   padding: 10px;
 }
@@ -29,7 +38,10 @@ html, body {
   height: 300px;
   width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 body {
   margin: 0;
   padding-bottom: 0px;
@@ -38,10 +50,6 @@ body {
   font-weight: 800;
 
 }
-/*img{
-display:inline;
-width: 20%;
-height: 50%;}*/
 @media (max-width: 979px) {
   body {
     padding-top: 0px;

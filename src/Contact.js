@@ -87,8 +87,20 @@ Late December, harsh winter gave me a cold  </p>
     </Card>
     
 
+<<<<<<< HEAD
 </CardStack>
 </div>
+=======
+                <div className='col-md-3'> <img className='img-circle' src="#" width="200" height="200" />
+                           <h3>Shazia</h3>
+                           <p>ho hum di dum</p>
+                           <a href="#">LinkedIn</a><br></br>
+                           <a href="#">Social Media</a><br></br>
+                           <a href="#">GitHub</a>
+                </div>
+          </div>
+        </div>
+>>>>>>> dev
       </div>
     )
   }
