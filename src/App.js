@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
-// require('./App.css');
 require('./index.css');
 import data from './data';
 import $ from 'jquery';
@@ -30,6 +29,7 @@ var App = React.createClass({
 })
 
 var Home = React.createClass({
+
   render: function() {
     return (
       <div id="home">
@@ -52,7 +52,6 @@ var Home = React.createClass({
 
 var Header = React.createClass({
   render: function() {
-
     return (
         <nav className="navbar navbar-inverse navbar-collapse">
           <div className="container-fluid">
@@ -61,25 +60,20 @@ var Header = React.createClass({
             </div>
             <ul className="nav navbar-nav">
               <li key="home">
-                <Link to="/">Home
-                </Link></li> 
+                <Link to="/">Home</Link></li> 
               <li className="dropdown"> 
                 <Link to="Services"  className="dropdown-toggle" 
                     data-toggle="dropdown" role="button"
-                     aria-haspopup="true" aria-expanded="false">Services
-                </Link> 
+                     aria-haspopup="true" aria-expanded="false">Services</Link> 
               </li>
               <li key="Clothing">
-                <Link to="Clothing">Clothing
-                </Link>
+                <Link to="Clothing">Clothing</Link>
               </li>
               <li key="about">
-                <Link to="About">About
-                </Link>
+                <Link to="About">About</Link>
               </li>
               <li key="contact">
-                <Link to="Contact">Contact
-                </Link>
+                <Link to="Contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -123,19 +117,18 @@ var ServicesIcon = React.createClass({
         <h1>SERVICES</h1>
         <div className="container">
           <div className="row">
-            <div className='col-sm-4'><Link to="Services">Front</Link>
+            <div className='col-sm-4'><a >Front</a>
                <p>Beautifully implement visual elements that users see and interact with in a web application. Our web designers work with the support of the back-end developers. </p>
             </div>
-            <div className='col-sm-4'><Link to="Services"><img src="https://cdn1.iconfinder.com/data/icons/express-your-creativity/60/web-development-512.png" width="150" height="100" alt="back-end-dev" /></Link>
+            <div className='col-sm-4'><a ><img src="https://cdn1.iconfinder.com/data/icons/express-your-creativity/60/web-development-512.png" width="150" height="100" alt="back-end-dev" /></a>
                 <p>Our back end developers
                 are experts in being responsible for server-side web application logic, APIs, and integration with front end web developers.</p>
             </div>
-            <div className='col-sm-4'><Link to="Services"><img src="http://i1.wp.com/connectedresearchers.com/wp-content/uploads/2014/11/icon_26055.png" width="150" height="100" alt="program-management" /></Link>
+            <div className='col-sm-4'><a ><img src="http://i1.wp.com/connectedresearchers.com/wp-content/uploads/2014/11/icon_26055.png" width="150" height="100" alt="program-management" /></a>
                 <p>From concept to post production all aspects of your project will be in good hands with our professional project and product managers.</p>
             </div>
-          </div>
-    
-      </div>
+          </div>    
+       </div>
       {this.props.children}
     </div>
     )
@@ -158,7 +151,6 @@ var CoderClothing = React.createClass({
   }
 }) 
 
-
 var ContactInfo = React.createClass({
   render: function() {
     return ( 
@@ -166,7 +158,6 @@ var ContactInfo = React.createClass({
             <h1>Contact Info</h1>
             <p>ADD located at 31-00 soured from c4q blah blah</p>
           </div>
-
     )
   }
 })   
@@ -195,20 +186,22 @@ var NotFound = React.createClass({
     )
   }
 })
+
 ReactDOM.render(
     <Router history={browserHistory}>
       <Route path="/" component={App}>
             <IndexRoute component={Home}/>
-            <Route path="/Services" component={Services}>
-              <Route path="front" component={Front}/>
-              <Route path="back" component={Back}/>
-              <Route path="Management" component={Management}/>
+            <Route path="Services" component={Services}>
+              <Route path="/front" component={Front}/>
+              <Route path="/back" component={Back}/>
+              <Route path="/management" component={Management}/>
             </Route>
             <Route path="/Clothing" component={Clothing} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="*" component={NotFound} />
       </Route>
-      <Route path="*" component={NotFound} />
+    
   </Router>,
   document.getElementById('root')
 );

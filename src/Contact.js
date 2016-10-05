@@ -85,9 +85,7 @@ I'm finna talk about my mama if yall don't mind
 I was three years old, when you and I moved to the Chi
 Late December, harsh winter gave me a cold  </p>
     </Card>
-    
-
-</CardStack>
+    </CardStack>
 </div>
       </div>
     )
