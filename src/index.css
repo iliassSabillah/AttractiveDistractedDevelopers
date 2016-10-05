@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 
-#clothinghanger>img{
-  padding-top: 5px;
-  padding-left: 25px;
-
-}
-=======
-
->>>>>>> c34003d1f11c89c866bc14b4c69a1c9a2e5de9ac
 html, body {
   padding: 10px;
+}
+
+h1 {
+  color: white;
+  background-color: rgba(0, 143, 149, 0.5);
 }
 
 .img-circle {
@@ -38,10 +34,7 @@ html, body {
   height: 300px;
   width: 100%;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> c34003d1f11c89c866bc14b4c69a1c9a2e5de9ac
 body {
   margin: 0;
   padding-bottom: 0px;
@@ -50,16 +43,36 @@ body {
   font-weight: 800;
 
 }
+/*img{
+display:inline;
+width: 20%;
+height: 50%;}*/
 @media (max-width: 979px) {
   body {
     padding-top: 0px;
   }
 }
-.navbar.submenu>li{
-	background-color: gray;
-	font-size: 16px;
+
+.navbar {
+  background-color: #E24E42;
 }
 
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar.submenu>li{
+  font-size: 16px;
+}
+
+.container {
+  background-color: rgba(233, 176, 0, 0.5);
+  border-radius: 8px;
+}
 .footer {
   position: relative;
   right: 0;
@@ -68,8 +81,8 @@ body {
   margin-bottom: 0;
   margin-top:100%;
   padding: 2rem;
-  color: #9d9d9d;
-  background-color: #222;
+  color: white;
+  background-color: #E24E42;
   text-align: center;
 }
 
