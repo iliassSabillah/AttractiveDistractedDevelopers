@@ -1,0 +1,45 @@
+.serviceLink{
+/*  display: flex;
+  flex-direction: row;*/
+  justify-content: space-between;
+ 
+  background: #FF165D;
+}
+
+.serviceLink2{
+   display: inline-flex;
+  flex-direction: row;
+}
+
+.serviceFront{
+  padding: 30px;
+  display: inline-flex;
+  margin: 20px;
+}
+
+.serviceBack{
+  padding: 30px;
+  display: inline-flex;
+  margin: 20px;
+}
+.serviceManagement{
+  padding: 30px;
+  display: inline-flex;
+  margin: 20px;
+}
+
+#service{
+    display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*##front{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  text-align: center;
+}
+*/

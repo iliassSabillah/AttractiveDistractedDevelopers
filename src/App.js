@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 // require('./App.css');
 require('./index.css');
+require('./Services.css');
 import data from './data';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';

@@ -6,10 +6,19 @@ var Services = React.createClass({
   render: function() {
       return (
       <div id="service">
-          <li><Link to="Services/front">Front </Link></li>
-          <li><Link to="Services/back">Back </Link></li>
-          <li><Link to="Services/management">Management </Link></li>
           <h2>Home of the Attractive Distracted Developers</h2>
+          
+            <div className="serviceLink">
+            <ul className="serviceLink2">
+              
+               <p className="serviceFront"><Link to="Services/front">Front </Link> </p>
+                 
+             <p className="serviceBack"> <Link to="Services/back">Back </Link> </p>
+
+             <p className="serviceManagement"> <Link to="Services/management">Management </Link> </p>
+            
+            </ul>
+          </div>
           {this.props.children}
       </div>
     )
