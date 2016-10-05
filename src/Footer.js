@@ -5,12 +5,8 @@ var Footer = React.createClass({
   render(){
     return (
         <div className="footer" id="contact">
-          <h1>CONTACT</h1>
-            <h3>C4Q</h3>
-            <h4>ACCESS CODE</h4>
-            <p>31-00 47th ave</p>
-            <p>Phone Number</p>
-            <p>email</p>
+            <p>“Java is to JavaScript what Car is to Carpet.” - Chris Heilmann</p> <br></br>
+            <p>Copyright smilE-commerce 2016</p>
         </div>
       )
   }

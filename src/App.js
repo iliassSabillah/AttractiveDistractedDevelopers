@@ -17,12 +17,10 @@ import About from './About';
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
-import NotFound from './NotFound'
-
+import NotFound from './NotFound';
 import {Product, Clothing} from './Clothing';
 
 var App = React.createClass({
-
   render: function() {
     return (
       <div>
@@ -33,9 +31,6 @@ var App = React.createClass({
     )
   }
 })
-
-
-
 
 ReactDOM.render(
     <Router history={browserHistory}>

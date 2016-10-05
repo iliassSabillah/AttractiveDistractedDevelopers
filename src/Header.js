@@ -8,7 +8,7 @@ var Header = React.createClass({
         <nav className="navbar navbar-inverse navbar-collapse">
           <div className="container-fluid">
             <div className="navbar-header">
-                <a className="navbar-brand App-logo" href="#">ADD</a>
+                <a className="navbar-brand App-logo" href="#">ADD--</a>
             </div>
             <ul className="nav navbar-nav">
               <li key="home">

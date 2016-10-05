@@ -8,9 +8,9 @@ var ContactInfo = React.createClass({
           <div id="contactInfo">
             <h1>Contact Info</h1>
             <p>ADD located at 31-00 soured from c4q blah blah</p>
-            <div className="container">
+            <div className="container-fluid">
               <div className="row">
-                 <div className='col-md-12'> <Link to="contact"><img src="https://hd.unsplash.com/photo-1447069387593-a5de0862481e" width="100%" height="auto" /></Link>
+                 <div> <Link to="contact"><img width="100%" height="auto" /></Link>
                 </div>
               </div>
           	</div>
