@@ -1,6 +1,15 @@
 
 html, body {
-  
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  background-color: rgba(0, 143, 149, 0.5);
+}
+
+.breadcrumb li>a {
+  color: black;
 }
 
 .img-circle {
@@ -11,22 +20,14 @@ html, body {
 
 .lisapic {
   width: 100%;
-  
 }
-
 #homeabout {
   background: url("http://www.bstlhj6.com/data/out/156/5018796-programmer-wallpapers.png") no-repeat center center fixed;
   opacity: 0.7;
   background-size: cover;
   height: 280px;
   width: 100%;
-  color: black;
 }
-
-.about {
-  color: black;
-}
-
 /*#coderclothing {
   background:url("https://s-media-cache-ak0.pinimg.com/originals/0b/f9/5b/0bf95b9203fe45ab8d5e7266647fa3f9.jpg")no-repeat center center fixed;                ;
 }*/
@@ -34,10 +35,10 @@ html, body {
   background: url("https://wallpaperscraft.com/image/programmer_coder_admin_administrator_5628_1920x1080.jpg") no-repeat center center fixed;
   opacity: 0.7;
   background-size: cover;
-  height: 280px;
+  height: 300px;
   width: 100%;
-  color: black;
 }
+
 body {
   margin: 0;
   padding-bottom: 0px;
@@ -46,23 +47,46 @@ body {
   font-weight: 800;
 
 }
+/*img{
+display:inline;
+width: 20%;
+height: 50%;}*/
 @media (max-width: 979px) {
   body {
     padding-top: 0px;
   }
 }
 
-.navbar a{
-  color: black;
+.navbar {
+  background-color: #E24E42;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar.submenu>li{
+  font-size: 16px;
+}
+
+.container {
+  background-color: rgba(233, 176, 0, 0.5);
+  border-radius: 8px;
 }
 .footer {
   position: relative;
   right: 0;
   bottom: 0;
-  left: 0;  
+  left: 0;
+  margin-bottom: 0;
+  margin-top:100%;
   padding: 2rem;
-  color: #9d9d9d;
-  background-color: #222;
+  color: white;
+  background-color: #E24E42;
   text-align: center;
 }
 
