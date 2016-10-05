@@ -1,6 +1,9 @@
-
 html, body {
   padding: 10px;
+}
+
+.breadcrumb li>a {
+  color: black;
 }
 
 h1 {

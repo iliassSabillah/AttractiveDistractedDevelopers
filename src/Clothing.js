@@ -1,5 +1,5 @@
 import React from 'react';
-import data from './data2';
+import data from './data';
 import {Link} from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 require('./index.css');
