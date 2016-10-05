@@ -3,9 +3,7 @@ import data from './data';
 import {Link} from 'react-router';
 
 var Services = React.createClass({
-
   render: function() {
-      console.log(this.props.params)
       return (
       <div id="service">
           <li><Link to="front">Front </Link></li>
