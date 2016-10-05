@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-#clothinghanger>img{
-  padding-top: 5px;
-  padding-left: 25px;
-  
 
-}
-
-=======
 html, body {
   padding: 10px;
 }
@@ -37,7 +29,7 @@ html, body {
   height: 300px;
   width: 100%;
 }
->>>>>>> a3e23ca9f8fafef76c454b86f1db1c8078aff0d4
+
 body {
   margin: 0;
   padding-bottom: 0px;
@@ -55,8 +47,21 @@ height: 50%;}*/
     padding-top: 0px;
   }
 }
+
+.navbar {
+  background-color: #80D6FF;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+}
+
 .navbar.submenu>li{
-	background-color: gray;
+	background-color: white;
 	font-size: 16px;
 }
 
@@ -69,7 +74,7 @@ height: 50%;}*/
   margin-top:100%;
   padding: 2rem;
   color: #9d9d9d;
-  background-color: #222;
+  background-color: #F06868;
   text-align: center;
 }
 

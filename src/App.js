@@ -91,7 +91,7 @@ var Header = React.createClass({
 var ImageBox = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="container-fluid">
         <img src="https://s-media-cache-ak0.pinimg.com/originals/c8/a2/cc/c8a2ccd031b2a85533bca14367607a42.jpg" alt="hire us" className="lisapic"/>
       </div>
     )
@@ -103,7 +103,7 @@ var ImageBox = React.createClass({
 var HomeAbout = React.createClass({
   render: function() {
     return ( 
-           <div id="homeabout">
+           <div className="container-fluid" id="homeabout">
             <h1>ABOUT</h1>
               <p>ADD IS A CREATIVE FREELANCE AGENCY THAT SPECIALIZES IN FULL STACK WEB DEVELOPMENT.
                 Attractive Distracted Developers <br/>
@@ -119,7 +119,7 @@ var HomeAbout = React.createClass({
 var ServicesIcon = React.createClass({
   render: function() {
     return (  
-      <div id="services"> 
+      <div className="container-fluid" id="services"> 
         <h1>SERVICES</h1>
         <div className="container">
           <div className="row">
@@ -145,7 +145,7 @@ var ServicesIcon = React.createClass({
 var CoderClothing = React.createClass({
   render: function() {
     return (  
-      <div id="coderclothing"> <h1>CODER CLOTHING</h1>
+      <div className="container-fluid" id="coderclothing"> <h1>CODER CLOTHING</h1>
           <p>Clodes to code in! View our coder closet for some coder clothes to add to your coder cache.</p>
           <div className="container">
             <div className="row">
@@ -162,7 +162,7 @@ var CoderClothing = React.createClass({
 var ContactInfo = React.createClass({
   render: function() {
     return ( 
-          <div id="contactInfo">
+          <div className="container-fluid" id="contactInfo">
             <h1>Contact Info</h1>
             <p>ADD located at 31-00 soured from c4q blah blah</p>
           </div>
@@ -174,7 +174,7 @@ var ContactInfo = React.createClass({
 var Footer = React.createClass({
   render(){
     return (
-        <div className="footer" id="contact">
+        <div className="container-fluid" className="footer" id="contact">
           <h1>CONTACTINFO</h1>
             <h3>C4Q</h3>
             <h4>ACCESS CODE</h4>
