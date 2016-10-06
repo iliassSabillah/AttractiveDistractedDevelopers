@@ -4,7 +4,7 @@ var HomeAbout = React.createClass({
   render: function() {
     return ( 
            <div className="container-fluid" id="homeabout">
-            <div className="row">
+            <div className="row about">
               <h1 className="about">ABOUT</h1>
               <p>ADD IS A CREATIVE FREELANCE AGENCY THAT SPECIALIZES IN FULL STACK WEB DEVELOPMENT.
                 Attractive Distracted Developers <br/>

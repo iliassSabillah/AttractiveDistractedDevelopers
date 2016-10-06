@@ -39,11 +39,11 @@ var Product = React.createClass({
 	},
 	render: function() {
     return (
-      <div>
+      <div id ="Clothing">
         <div id="clothinghanger"> <img src="https://openclipart.org/image/2400px/svg_to_png/230120/Clothes-Hanger.png" width='100' height='50' alt="hanger"  /> 
         </div>
         <div className="col-sm-3">
-           <div > <img className='img-circle' src={this.props.image} width="160" height="200" alt="stuff" />
+           <div > <img className='img-circle' src={this.props.image} width="140" height="180" alt="stuff" />
                        <p> {this.props.name}</p>
                        <p>$ {this.props.price}</p>
            </div>
