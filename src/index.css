@@ -1,6 +1,37 @@
 html, body {
   padding: 10px;
 }
+.about h1 {
+  color: white;
+  text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;
+}
+
+.about p {
+  color: black;
+}
+
+div #services> h1 {
+ color: white;
+  text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;
+}
+
+div #coderclothing> h1 {
+ color: white;
+  text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;
+}
+
+div #contactInfo> h1 {
+ color: black;
+  text-shadow: -2.5px 0 white, 0 2.5px white, 2.5px 0 white, 0 -2.5px white;
+}
+
+div #contactInfo> p {
+ color: white;
+  }
+
+.container .row .col-sm-4 >p {
+  color: black;
+}
 
 .breadcrumb {
   background-color: #FF165D;
@@ -44,10 +75,8 @@ h1 {
 body {
   margin: 0;
   padding-bottom: 0px;
-  font-family: sans-serif;
   color: black;
   font-weight: 800;
-
 }
 /*img{
 display:inline;
@@ -57,6 +86,17 @@ height: 50%;}*/
   body {
     padding-top: 0px;
   }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+#ImageBox>h1 {
+      text-shadow: -2.5px 0 white, 0 2.5px white, 2.5px 0 white, 0 -2.5px white;
+      color: black;
+
 }
 
 .navbar {
@@ -87,14 +127,58 @@ height: 50%;}*/
   margin-bottom: 0;
   margin-top:0%;
   padding: 2rem;
-  color: white;
+  color: black;
   background-color: #FF165D;
   text-align: center;
+  height: auto;
 }
-
+.footerquote{
+  color: #F6F7D7;
+}
 .box{
   padding: 25px;
   width:80%;
   height:80%;
   background-color: black;
+}
+
+.serviceLink{
+/*  display: flex;
+  flex-direction: row;*/
+  justify-content: space-between;
+ 
+  background: white;
+}
+.serviceLink2{
+   display: inline-flex;
+  flex-direction: row;
+}
+.serviceFront{
+  padding: 30px;
+  display: inline-flex;
+  margin: 20px;
+}
+.serviceBack{
+  padding: 30px;
+  display: inline-flex;
+  margin: 20px;
+}
+.serviceManagement{
+  padding: 30px;
+  display: inline-flex;
+  margin: 20px;
+}
+#service{
+    display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+#Clothing {
+  margin-bottom: 100px;
+}
+#storeAbout {
+  text-align: center;
+  margin:  30px;
 }
