@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+var Waypoint = require('react-waypoint');
 import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 require('./index.css');
 require('./App.css');
