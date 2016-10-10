@@ -6,8 +6,8 @@ var Front = React.createClass({
   render: function() {
     return (  
       <div>
-        <div id="#front"> <h1>FRONT END!</h1> </div>
-        <h2>We can make your web app pretty too look at with as little substance as possible!</h2>
+        <div id="front"> <h1>FRONT END!</h1> </div>
+        <h2>We can make your web app pretty to look at with as little substance as possible!</h2>
           <div className="container">
              <div className="row">
                 <div className='col-sm-4'> <img className='img-circle' src="http://www.chelseasmessyapron.com/wp-content/uploads/2016/02/FINAL00.png" width="400" height="400" />

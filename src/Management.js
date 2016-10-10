@@ -6,7 +6,7 @@ var Management = React.createClass({
   render: function() {
     return (  
       <div>
-        <div id="#management"> <h1>MANAGEMENT!</h1> </div>
+        <div id="management"> <h1>MANAGEMENT!</h1> </div>
         <h2>We dont actually have a plan; we play it by ear.</h2>
           <div className="container">
              <div className="row">

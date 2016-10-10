@@ -5,8 +5,8 @@ import {Link} from 'react-router';
 var Back = React.createClass({
   render: function() {
     return (  
-      <div>
-        <div id="#backend"> <h1>BACKEND!</h1> </div>
+      <div id="backend">
+        <h1>BACKEND!</h1>
         <h2>Using the duct tape programming method we implement in our coders the motto “It may not be pretty but it works!</h2>
           <div className="container">
              <div className="row">
